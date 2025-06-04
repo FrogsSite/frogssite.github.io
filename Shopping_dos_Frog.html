@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="icon" href="iconcats.png" type="iconcats.png">
+  <title>Loja dos CATS </title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffb700;
+      color: #3e1f00;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0 0 .3rem;
+      font-size: 2.4rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    nav {
+      background: #ffc107;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #3e1f00;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ffd54f;
+      color: #000;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      color: #d35400;
+      border-bottom: 3px solid #d35400;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    section h3 {
+      margin-top: 1rem;
+      color: #9c6400;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    section span{
+       margin-top: 1rem;
+      color: #e79200;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+      max-width: 700px;
+    }
+    ul li {
+      background: #fff3d2;
+      border-radius: 6px;
+      margin: 0.3rem 0;
+      padding: 0.5rem 1rem;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      font-size: 1.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    ul li span.price {
+      background: #ffb700;
+      color: #3e1f00;
+      font-weight: 700;
+      padding: 0.2rem 0.7rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+    .disponibilidade {
+      font-style: italic;
+      color: #a05200;
+      font-size: 0.95rem;
+      margin-left: 10px;
+    }
+    /* Responsivo */
+    @media (max-width: 720px) {
+      nav {
+        justify-content: center;
+      }
+      ul li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      ul li span.price {
+        margin-left: 0;
+        margin-top: 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Loja dos CATS 🐱 🛒</h1>
+    <p>Sejam bem-vindos! Aqui vocês podem comprar 🛍️ muitas coisas!</p>
+  </header>
+
+  <nav>
+    <a href="#titulos-cats">Títulos CATS</a>
+    <a href="#four-seasons">Títulos Four Seasons</a>
+    <a href="#comidas">Comidas Cats</a>
+    <a href="#bonecos">Bonecos Cats</a>
+    <a href="#roupas">Roupas</a>
+    <a href="#cartoes">Cartões Especiais</a>
+    <a href="https://mail.google.com/chat/u/0/#chat/space/AAQAmjxo15I"> Entre na Loja!</a>
+  </nav>
+
+  <main>
+    <!-- Títulos CATS -->
+    <section id="titulos-cats">
+      <h2>Títulos CATS 🐱</h2>
+      <ul>
+        <li>MR. <span class="price">100 CAT 🐱 Tokens 🪙</span></li>
+        <li>MC. <span class="price">200 CAT 🐱 Tokens 🪙</span></li>
+        <li>MK. <span class="price">300 CAT 🐱 Tokens 🪙</span></li>
+        <li>MP. <span class="price">400 CAT 🐱 Tokens 🪙</span></li>
+        <li>MRS. <span class="price">500 CAT 🐱 Tokens 🪙</span></li>
+        <li>MRP. <span class="price">550 CAT 🐱 Tokens 🪙</span></li>
+        <li>MST. <span class="price">600 CAT 🐱 Tokens 🪙</span></li>
+        <li>MRR. <span class="price">650 CAT 🐱 Tokens 🪙</span></li>
+        <li>MKS. <span class="price">700 CAT 🐱 Tokens 🪙</span></li>
+        <li>SR. <span class="price">850 CAT 🐱 Tokens 🪙</span></li>
+      </ul>
+    </section>
+
+    <!-- Four Seasons -->
+    <section id="four-seasons">
+      <h2>Títulos Four Seasons 🌻❄️⛱️🍂</h2>
+
+      <h3>Summer 🏝️⛱️ <span class="disponibilidade">(DISPONÍVEIS no verão)</span></h3>
+      <p><em>Indisponíveis atualmente</em></p>
+
+      <h3>Autumn 🍂🪵 <span class="disponibilidade">(DISPONÍVEIS até o inverno)</span></h3>
+      <ul>
+        <li>AUTUMNVIBE <span class="price">1.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>FALLLEAVES <span class="price">2.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>GOLDLEAF <span class="price">3.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>WINDYDAY <span class="price">4.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>BROWNTREES <span class="price">5.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>PUMPKINCAT <span class="price">6.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>COZYWIND <span class="price">7.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>HARVESTTIME <span class="price">8.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>ORANGEGLOW <span class="price">9.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>CINNAMONFEEL <span class="price">10.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>LEAFCARPET <span class="price">10.100 CATS🐱 TOKENS 🪙</span></li>
+        <li>FIREFALL <span class="price">10.200 CATS🐱 TOKENS 🪙</span></li>
+        <li>AUTUMNKISS <span class="price">10.300 CATS🐱 TOKENS 🪙</span></li>
+        <li>CATSINLEAVES <span class="price">10.400 CATS🐱 TOKENS 🪙</span></li>
+      </ul>
+
+      <h3>Winter ❄️☃️ <span class="disponibilidade">(DISPONÍVEIS no inverno)</span></h3>
+      <p><em>Indisponíveis atualmente</em></p>
+
+      <h3>Spring 🌻🌹 <span class="disponibilidade">(DISPONÍVEIS na primavera)</span></h3>
+      <p><em>Indisponíveis atualmente</em></p>
+
+      <h3>Títulos Temáticos 🐱🌟</h3>
+      <h4>Festa Junina 🌽🔥 <span class="disponibilidade">(DISPONÍVEIS até dia 30/06)</span></h4>
+      <ul>
+        <li>JUNINACAT <span class="price">1.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>BALAFESTA <span class="price">2.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>FOGUEIRINHA <span class="price">3.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>MILHOCAT <span class="price">4.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>PIPOCAFUN <span class="price">5.000 CATS🐱 TOKENS 🪙</span></li>
+         <li>SÃOJOÃOMEOW <span class="price">6.000 CATS🐱 TOKENS 🪙</span></li>
+         <li>ARRAIADOCAT <span class="price">7.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>BANDERINHAS <span class="price">8.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>DOCESJUNINOS <span class="price">9.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>XADREZCOLOR <span class="price">10.000 CATS🐱 TOKENS 🪙</span></li>
+        <li>CAMPINAFEST <span class="price">10.100 CATS🐱 TOKENS 🪙</span></li>
+        <li>VIVASÃOJOÃO <span class="price">10.200 CATS🐱 TOKENS 🪙</span></li>
+        <li>FORROZINHO <span class="price">10.300 CATS🐱 TOKENS 🪙</span></li>
+        <li>CORNKISS <span class="price">10.400 CATS🐱 TOKENS 🪙</span></li>
+</ul>
+<h4>Títulos de Natal 🎁🎅 <span class="disponibilidade">(INDISPONÍVEIS)</span></h4>
+<h4>Títulos de Páscoa 🐇🍫 <span class="disponibilidade">(INDISPONÍVEIS)</span></h4>
+<h4>Títulos de Aniversário 🐱🎂 <span class="disponibilidade">(INDISPONÍVEIS)</span></h4>
+</section>
+
+<!-- Comidas -->
+<section id="comidas">
+  <h2>Comidas Cats 🍔🐈‍⬛</h2>
+  <ul>
+    <h3>🍗🥗 COMIDAS CATS – CATEGORIA ACADEMIA 🐾</h3>
+    <li>FRANGO DESFIADO FIT DO MIAU <span class="price">1.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>SHAKE PROTEICO DO CATLETE <span class="price">2.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>BOLINHO PROTÉICO DE ATUM <span class="price">3.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>BARRA DE ENERGIA FELINA <span class="price">4.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>OMELETE DE PATINHA FIT <span class="price">5.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>MARMITINHA DO GATÃO <span class="price">6.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>IOGURTE NATURAL DO MIAU <span class="price">7.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>SALADA DE PROTEÍNA DA SELVA <span class="price">8.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>SANDUÍCHE INTEGRAL GATÍSSIMO <span class="price">9.000 CATS🐱 TOKENS 🪙</span></li>
+    <li>ARROZ INTEGRAL + FRANGO POWER CAT <span class="price">10.000 CATS🐱 TOKENS 🪙</span></li>
+   
+    <h2>Four Seasons 🏖🌿🍂❄:</h2>
+
+  <h3>☀️ Verão (INDISPONÍVEIS)</h3>
+
+  <h3>🍂 Outono (DISPONÍVEIS até o inverno)</h3>
+  <li>BISCOITO FOLHINHA CROCANTE (🪙 1.000 CATS🐱 TOKENS)</li>
+  <li>TORTA DE ABÓBORA DO MIAU (🪙 2.000 CATS🐱 TOKENS)</li>
+  <li>ROLINHO DE CANELINHA (🪙 3.000 CATS🐱 TOKENS)</li>
+  <li>SUCO DE MAÇÃ QUENTINHO (🪙 4.000 CATS🐱 TOKENS)</li>
+  <li>TORRADA DE OUTONO (🪙 5.000 CATS🐱 TOKENS)</li>
+  <li>CHÁ DE ERVAS FELINAS (🪙 6.000 CATS🐱 TOKENS)</li>
+  <li>PURÊ DE CENOURA GATÍSSIMO (🪙 7.000 CATS🐱 TOKENS)</li>
+  <li>BOLO DE NOZES DO MIAU (🪙 8.000 CATS🐱 TOKENS)</li>
+  <li>CALDINHO DE ABÓBORA (🪙 9.000 CATS🐱 TOKENS)</li>
+
+  <h3>❄️ Inverno (INDISPONÍVEIS)</h3>
+  <h3>🌸 Primavera (INDISPONÍVEIS)</h3>
+
+
+  <h2>COMIDAS COMEMORATIVAS 🐱🎉</h2>
+
+  <h3>Festa Junina 🌽🔥 (DISPONÍVEIS até dia 30/06)</h3>
+  <li>PIPOCA DA PATINHA (🪙 1.000 CATS🐱 TOKENS)</li>
+  <li>BOLINHO DE CATIMÃO (🪙 2.000 CATS🐱 TOKENS)</li>
+  <li>PASTEL DO GATARRAIÁ (🪙 3.000 CATS🐱 TOKENS)</li>
+  <li>MAÇÃ DO PELUJO (🪙 4.000 CATS🐱 TOKENS)</li>
+  <li>MINGAU DE MILHOCAT (🪙 5.000 CATS🐱 TOKENS)</li>
+  <li>CURAL DE MILHO FELINO (🪙 6.000 CATS🐱 TOKENS)</li>
+  <li>QUENTÃO DE MIAU (🪙 7.000 CATS🐱 TOKENS)</li>
+  <li>BALA DE GATO (🪙 8.000 CATS🐱 TOKENS)</li>
+  <li>DOCES DE AMENDOIM GATÍSSIMOS (🪙 9.000 CATS🐱 TOKENS)</li>
+  <li>PAMONHA CATMILHO (🪙 10.000 CATS🐱 TOKENS)</li>
+
+  <h3>🎄 Natal (INDISPONÍVEIS)</h3>
+
+  <h2>🌿 Natureza</h2>
+
+  <li>SALADA DA TERRA FELINA (🪙 1.000 CATS🐱 TOKENS)</li>
+  <li>SUCO DAS FLORES (🪙 2.000 CATS🐱 TOKENS)</li>
+  <li>BARRINHA ENERGIA VERDE (🪙 3.000 CATS🐱 TOKENS)</li>
+  <li>SANDUÍCHE DAS RAÍZES (🪙 4.000 CATS🐱 TOKENS)</li>
+  <li>BOLINHO DAS MONTANHAS (🪙 5.000 CATS🐱 TOKENS)</li>
+  <li>CHÁ DE ERVAS SELVAGENS (🪙 6.000 CATS🐱 TOKENS)</li>
+  <li>FRUTAS SILVESTRES DO MIAU (🪙 7.000 CATS🐱 TOKENS)</li>
+  <li>PASTA DE NOZES GATINHA (🪙 8.000 CATS🐱 TOKENS)</li>
+  <li>GELATINA NATURAL (🪙 9.000 CATS🐱 TOKENS)</li>
+
+  <h2>🎂 Aniversário dos CATS (INDISPONÍVEIS)</h2>
+
+  <h2>🍽️ Comidas Premium CATS 🐱✨</h2>
+  <li>SUSHI REAL DO MIAU IMPERIAL <span class="price">20.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>ESCALOPE DE ATUM NOBRE <span class="price">22.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>MOUSSE FELINO DE SALMÃO SELVAGEM <span class="price">25.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>RAVIOLI DE PATINHA TRUFADA <span class="price">27.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>TÁBUA DE QUEIJOS FELINOS ARTESANAIS <span class="price">30.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>SOPA DOURADA DA LUA CHEIA <span class="price">32.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>BOLO DOS DEUSES GATÍSTICOS <span class="price">35.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>DOCINHO DE MEL DA REALEZA FELINA <span class="price">36.500 CAT 🐱 Tokens 🪙</span></li>
+  <li>MACARON DE NEVE DO GATO BRANCO <span class="price">38.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>TAÇA CÉU DE MORANGATOS <span class="price">40.000 CAT 🐱 Tokens 🪙</span></li>
+
+  </ul>
+</section>
+
+
+<!-- Bonecos -->
+<section id="bonecos">
+  <h2>Bonecos Cats 🐱</h2>
+  <h3>Laranja 🐈:</h3>
+  <ul>
+    <li>Boneco Pequeno Laranja CAT 🐈 <span class="price">5.000 CAT 🐱 Tokens 🪙</span> (dá +300 no salário)</li>
+    <li>Boneco Laranja CAT 🐈 <span class="price">10.000 CAT 🐱 Tokens 🪙</span> (dá +600 no salário)</li>
+    <li>Boneco Grande Laranja CAT 🐈 <span class="price">15.000 CAT 🐱 Tokens 🪙</span> (dá +900 no salário)</li>
+  </ul>
+  <h3>Preto 🐈‍⬛:</h3>
+  <ul>
+    <li>Boneco Pequeno Preto CAT 🐈‍⬛ <span class="price">5.000 CAT 🐱 Tokens 🪙</span> (dá +300 no salário)</li>
+    <li>Boneco Preto CAT 🐈‍⬛ <span class="price">10.000 CAT 🐱 Tokens 🪙</span> (dá +600 no salário)</li>
+    <li>Boneco Grande Preto CAT 🐈‍⬛ <span class="price">15.000 CAT 🐱 Tokens 🪙</span> (dá +900 no salário)</li>
+  </ul>
+</section>
+
+<section id="roupas">
+  <H2> ROUPAS 🧥👖🥾🧤</H2>
+  <SPAN>Four Seasons ⛱🍂❄🌸</SPAN>
+  <h3>Verão ⛱ (INDISPONÍVEIS)</h3>
+<h3>Outono 🍂🪵 <span class="disponibilidade">(DISPONÍVEIS até o inverno)</span></h3>
+<ul>
+  <li>Gorro felpudo FolhaMiau 🍁 <span class="price">1.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Cachecol CanelaCat 🧣 <span class="price">2.200 CATS🐱 TOKENS 🪙</span></li>
+  <li>Blusinha AutumnWhiskers 🍂 <span class="price">3.300 CATS🐱 TOKENS 🪙</span></li>
+  <li>Suéter Quentinho MiaBrown 🧶 <span class="price">4.400 CATS🐱 TOKENS 🪙</span></li>
+  <li>Boina Gatídea 🍂🎩 <span class="price">5.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Colete Outonal MiauVest 🍃 <span class="price">5.800 CATS🐱 TOKENS 🪙</span></li>
+  <li>Botinha FolhaSeca 🥾 <span class="price">6.300 CATS🐱 TOKENS 🪙</span></li>
+  <li>Macacão GatoCastanho 🐾 <span class="price">6.900 CATS🐱 TOKENS 🪙</span></li>
+  <li>Chapéu de Cogumelo ShroomCat 🍄 <span class="price">7.400 CATS🐱 TOKENS 🪙</span></li>
+  <li>Jaqueta VentoOutono 🌬️ <span class="price">8.000 CATS🐱 TOKENS 🪙</span></li>
+</ul>
+
+
+  <h3> INVERNO ❄ (INDISPONÍVEIS)</h3>
+  <h3> PRIMAVERA 🌸 (INDISPONÍVEIS)</h3>
+
+  <h3>Academia 🏋️‍♂️🐾 <span class="disponibilidade">(DISPONÍVEIS o ano todo)</span></h3>
+<ul>
+  <li>Top GatoFit 💪 <span class="price">1.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Short MiaGym 🩳 <span class="price">2.200 CATS🐱 TOKENS 🪙</span></li>
+  <li>Regata FlexMiau 🐱🏋️ <span class="price">2.800 CATS🐱 TOKENS 🪙</span></li>
+  <li>Faixa de Cabeça FitWhiskers 🧢 <span class="price">1.200 CATS🐱 TOKENS 🪙</span></li>
+  <li>Legging Purrformance ⚡ <span class="price">3.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Bolsa de Academia CatBag 👜 <span class="price">4.000 CATS🐱 TOKENS 🪙</span></li>
+</ul>
+
+<h3>Premium 💎✨ <span class="disponibilidade">(SOMENTE para CATS🐱 com Cartão Ouro Gato/CARTÃO CATS BLACK ELITE 🖤 ou superior)</span></h3>
+<ul>
+  <li>Casaco SupremeMiau 👑 <span class="price">12.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Vestido RoyalWhisker 💃 <span class="price">13.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Gravata LuxoMeow 🕴️ <span class="price">11.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Chapéu ImperialCat 🎩 <span class="price">10.800 CATS🐱 TOKENS 🪙</span></li>
+  <li>Botas Douradas MiaStep 👢 <span class="price">14.000 CATS🐱 TOKENS 🪙</span></li>
+</ul>
+
+<h3>Natureza 🌿🌼 <span class="disponibilidade">(DISPONÍVEIS até 2026)</span></h3>
+<ul>
+  <li>Vestido FlorzinhaMeow 🌸 <span class="price">2.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Chapéu de Sol GatoVerde 🌞 <span class="price">1.800 CATS🐱 TOKENS 🪙</span></li>
+  <li>Macacão SelvaCat 🌴 <span class="price">3.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Camisa PétalaWhiskers 🌺 <span class="price">2.700 CATS🐱 TOKENS 🪙</span></li>
+  <li>Coroa de Flores MiaFloral 🌷 <span class="price">3.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Capinha de Chuva GatoNévoa 🌧️ <span class="price">2.900 CATS🐱 TOKENS 🪙</span></li>
+  <li>Botas de Trilha MiauTerra 🥾 <span class="price">4.000 CATS🐱 TOKENS 🪙</span></li>
+  <li>Colete Folhinha 🪴 <span class="price">3.600 CATS🐱 TOKENS 🪙</span></li>
+  <li>Fantasia de Borboleta CatFly 🦋 <span class="price">4.500 CATS🐱 TOKENS 🪙</span></li>
+  <li>Chapéu CogumeloMiau 🍄 <span class="price">3.800 CATS🐱 TOKENS 🪙</span></li>
+  <li>Roupa Raio de Sol SolarWhisker ☀️ <span class="price">5.000 CATS🐱 TOKENS 🪙</span></li>
+</ul>
+
+<h3>Aniversário 🎉🎂🎈 <span class="disponibilidade">(DISPONÍVEIS no dia 15/05 até 01/06)</span></h3>
+
+
+<h3>🎄 Natal (Meowmas Edition) <span class="disponibilidade">(DISPONÍVEIS em dezembro)</span></h3>
+</section>
+
+<!-- Cartões Especiais -->
+<section id="cartoes">
+  <h2>Cartões Especiais de Evento 🐱</h2>
+  <ul>
+    <li>Cartão Natal CAT 🎄 🐱 – (INDISPONÍVEL)</li>
+    <li>Cartão Páscoa CAT 🐱 🍫 – (INDISPONÍVEL)</li>
+
+    <li>Cartão Aniversário CATS 🐱🎂 – (INDISPONÍVEL)</li>
+    <li>Cartão Festa Junina CAT 🎇🐱 – (disponível até 30/06) (-30 em comidas juninas + valor como crédito)</li>
+   
+    <br>
+    <h3> Cartões Four Seasons 🏖🌿🍂❄</h3>
+    <br>
+    <li>Cartão Outono CAT 🍂 🐱 <span class="price">150.000 CATS Tokens 🪙</span> (-25 nos títulos de outono + valor como crédito)</li>
+    <li>Cartão Verão CAT 🏖🐱 <span class="price">INDISPONÍVEL</span> (-25 nos títulos de verão + valor como crédito)</li>
+    <li>Cartão Inverno CAT ❄ 🐱 <span class="price">INDISPONÍVEL</span> (-25 nos títulos de inverno + valor como crédito)</li>
+    <li>Cartão Primavera CAT 🌸 🐱 <span class="price">INDISPONÍVEL</span> (-25 nos títulos de primavera + valor como crédito)</li>
+    <li>Cartão Natureza CAT 🌿🐱 <span class="price">12.000 CATS Tokens 🪙</span> (-20 nas comidas da Natureza + 1 comida bônus)</li>
+     
+    <h2>💳 Cartões Premium Especiais 🐱👑</h2>
+  <li>CARTÃO LENDÁRIO: "MIAU ETERNO" <span class="price">50.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO DOURADO DO CÉU DOS GATOS <span class="price">55.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO GALÁXIA FELINA <span class="price">60.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO MÍSTICO DA LUA MIAU <span class="price">65.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO VIP DO GATINHO DOS SONHOS <span class="price">70.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO CATS BLACK ELITE 🖤 <span class="price">75.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO DO REINO MIAULÁSTICO <span class="price">80.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO ESPIRITUAL DO GATO SHAMAN <span class="price">90.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO ANCESTRAL DO CÓDIGO MIAU <span class="price">95.000 CAT 🐱 Tokens 🪙</span></li>
+  <li>CARTÃO DIVINO: "O PRIMEIRO MIAU" <span class="price">100.000 CAT 🐱 Tokens 🪙</span></li>
+
+
+    <h3>Cartões De Desconto 💳:</h3>
+
+        
+    <li>Cartão Gato <span class="price">5.000 CATS Tokens 🪙</span> (-500 em qualquer compra)</li>
+    <li>Cartão Prata Gato <span class="price">10.000 CATS Tokens 🪙</span> (-700 em qualquer compra)</li>
+    <li>Cartão Ouro Gato <span class="price">15.000 CATS Tokens 🪙</span> (-900 em qualquer compra)</li>
+    <li>Cartão Diamante Gato <span class="price">20.000 CATS Tokens 🪙</span> (-1.200 em qualquer compra)</li>
+    <li>Cartão Premium CAT 👑🐱 <span class="price">50.000 CATS Tokens 🪙</span> (-100 nas comidas Premium + acesso exclusivo)</li>
+   
+</ul>
+</section>
+
+</main>
+</body>
+</html>
+</ul>
+</section>
+
+</main>
+</body>
+</html>
